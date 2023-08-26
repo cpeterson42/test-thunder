@@ -6,4 +6,4 @@ def test_function():
     b = np.array([1])
     c = np.multiply(a, b)
 
-    return str(c)
+    return c
