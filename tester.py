@@ -25,7 +25,7 @@ class Tester:
 
         module = importlib.import_module(
             f'{self.tests_dir}.{chosen_test[:-3]}')
-        result = module.test_function()
+        result = str(module.test_function())
         expected_result = self.expected_results.get(chosen_test[:-3])
         success = (result == expected_result)
         print(f"Success?: {success}")
